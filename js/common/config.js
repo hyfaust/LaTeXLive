@@ -26,7 +26,7 @@ const Environment = RuntimeConfig.Environment || "development";
 
 const Config = mergeConfig({
   development: {
-    Version: "development-" + new Date().getTime(),
+    Version: "development-"+new Date().getTime(),
     MainJS: {
       latex: "/publish/latex.bundle.min.js",
       readme: "/publish/readme.bundle.min.js",

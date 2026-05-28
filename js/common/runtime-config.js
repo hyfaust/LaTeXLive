@@ -1,4 +1,5 @@
 window.__LATEXLIVE_RUNTIME_CONFIG__ = {
+  Environment: "release", 
   Config: {
     development: {
       WXLogin: {

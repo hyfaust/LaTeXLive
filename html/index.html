@@ -85,6 +85,8 @@
   <div class="screenmodal" id="wrap_setting"></div>
   <div class="screenmodal-mask" id="mask_setting"></div>
 
+  <!-- Mathpix image recognition loading modal - DISABLED (API not available) -->
+  <!--
   <div class="loading" id="loadingModal" onclick="return false;">
     <div>
       <div class="progress progress-striped active">
@@ -93,10 +95,55 @@
       <p>正在识别...</p>
     </div>
   </div>
+  -->
   <!-- #endregion -->
 
   <script src="../js/common/common_40.js" id="common_40"></script>
   <script src="../js/common/common_50.js" id="common_50"></script>
+
+  <!-- Disable Mathpix image recognition feature (API not available locally) -->
+  <script>
+    (function() {
+      // Hide Mathpix tab and panel after DOM is ready
+      function hideMathpixUI() {
+        var mathpixTab = document.getElementById('a_shortcut_mathpix');
+        if (mathpixTab && mathpixTab.parentElement) {
+          mathpixTab.parentElement.style.display = 'none';
+        }
+        var mathpixPanel = document.getElementById('wrap_shortcut_mathpix');
+        if (mathpixPanel) {
+          mathpixPanel.style.display = 'none';
+        }
+      }
+
+      // Run immediately and also after a delay to catch dynamically created elements
+      hideMathpixUI();
+      if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', hideMathpixUI);
+      }
+      setTimeout(hideMathpixUI, 1000);
+      setTimeout(hideMathpixUI, 3000);
+
+      // Stub the getLaTexFromMathPix API call to show a friendly message
+      if (typeof $ !== 'undefined') {
+        $(document).ready(function() {
+          // Override loadingModal show to prevent it from appearing
+          var $loadingModal = $('#loadingModal');
+          if ($loadingModal.length) {
+            $loadingModal.css('display', 'none');
+            // Override any attempts to show it
+            var originalShow = $.fn.show;
+            $.fn.show = function() {
+              if (this[0] && this[0].id === 'loadingModal') {
+                return this;
+              }
+              return originalShow.apply(this, arguments);
+            };
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 
 </html>

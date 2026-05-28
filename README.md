@@ -1,10 +1,10 @@
 > 从 LateX公式编辑器-妈叔出品 修改而来，离线本地打开index.html即可使用
 
-
-
-使用文档 Documentation
+使用文档 [Documentation](https://www.latexlive.com/help)
 ====
-====
+
+-----
+
 ### 目录 Contents
 
 
@@ -601,7 +601,7 @@ $$
 
 MathJax能够自动处理大多数空格间距的大小，但如果您需要自己控制，可参考下表。
 
-序号 | 样式 | LaTeX | 中文说明英文说明
+序号 | 样式 | LaTeX | 中文说明 | 英文说明
 :----: | :----: | :---- | :---- | :----
 1 | $a \qquad b$ | a \qquad b | 双空格 | double quad space
 2 | $a \quad b$ | a \quad b | 单空格 | quad space
@@ -1230,11 +1230,13 @@ Newcommand扩展包提供了\def, \newcommand，\renewcommand，\let，\newenvir
 如有任何问题可以点击页面下方的邮箱图标向我们反馈，感谢您的使用！
 
 ### 4 参考文献 Reference
+
 [1. LaTeX公式编辑器](http://47.104.179.138/)
 [2. MathJax Documentation](https://docs.mathjax.org/en/latest/index.html)
 [3. Displaying a formula](https://en.wikipedia.org/wiki/Help:Displaying_a_formula)
 [4. mathjax/MathJax: Beautiful math in all browsers - GitHub](https://github.com/mathjax/MathJax)
 [5. mhchem for MathJax](https://mhchem.github.io/MathJax-mhchem/)
+
 Open-source config
 ====
 
