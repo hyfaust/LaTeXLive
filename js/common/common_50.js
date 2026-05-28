@@ -36,10 +36,10 @@ var scriptLoader = {
     } else {
       document.getElementById("isJavaScript").remove();
       document.getElementById("ifIE-show").remove();
-      //更新图片路径
-      document.getElementById("img_eqcode").src = boot_body + "/img/wechat.png";
-      document.getElementById("img_toutiao").src = boot_body + "/img/toutiao.png";
-      document.getElementById("img_gitee").src = boot_body + "/img/gitee.png";
+      //更新图片路径（社交媒体图标已移除）
+      // document.getElementById("img_eqcode").src = boot_body + "/img/wechat.png";
+      // document.getElementById("img_toutiao").src = boot_body + "/img/toutiao.png";
+      // document.getElementById("img_gitee").src = boot_body + "/img/gitee.png";
       //更新标题中的版本号
       document.getElementById("ver_h1").innerHTML = "ver" + ver_body;
       //更新版权中的版本号

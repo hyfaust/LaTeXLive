@@ -1,22 +1,7 @@
 document.writeln("<footer class='c' id='footer'>");
 document.writeln("    <div class='container'>");
-document.writeln("      <div class='contractme'>");
-document.writeln("        <a href='#' title='电子邮件'><i class='fa fa-envelope'></i></a>");
-document.writeln("        <a href='#' target='_blank' title='新浪微博'><i class='fa fa-weibo'></i> </a>");
-document.writeln("        <div id='wrap_wechat'>");
-document.writeln("          <a href='#' id='a_wechat' title='微信公众号'>");
-document.writeln("            <i class='fa fa-wechat'></i>");
-document.writeln("          </a>");
-document.writeln("          <div id='eqcode_wechat'>");
-document.writeln("            <img src='' id='img_eqcode' />");
-document.writeln("          </div>");
-document.writeln("        </div>");
-document.writeln("        <a href='#' target='_blank' title='西瓜视频'><img src='' id='img_toutiao' /></a>");
-document.writeln("        <a href='#' target='_blank' title='码云'><img src='' id='img_gitee' /></a>");
-document.writeln("        <a href='#' target='_blank' title='GitHub'><i class='fa fa-github'></i></a>");
-document.writeln("        <a href='#' target='_blank' title='油管'><i");
-document.writeln("            class='fa fa-youtube'></i></a>");
-document.writeln("      </div>");
+// 社交媒体图标已移除
+document.writeln("      <div class='contractme' style='display:none'></div>");
 document.writeln("      <div class='copyright'>");
 document.writeln("        <p id='copyver'>Copyright &copy; 2019 妈咪说（北京）科技传媒有限公司 All Rights Reserved&nbsp;&nbsp;ver:1.3.0.200608</p>");
 document.writeln("        <a  target='_blank'> <span>版权/专利归妈咪说（北京）科技传媒有限公司所有，如用于商业盈利与本人/本站无关</span> </a><br/>");
