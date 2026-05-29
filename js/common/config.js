@@ -131,7 +131,7 @@ const Config = mergeConfig({
         GetRemainTime: "Client/GetRemainTime",
       },
     },
-    Hostname: "https://www.latexlive.com",
+    Hostname: "https://hyfaust.github.io/LaTeXLive",
     Analytics: {
       GoogleUA: "",
     },
